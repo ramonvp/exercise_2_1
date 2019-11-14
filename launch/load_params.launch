@@ -1,0 +1,7 @@
+<launch>
+    <rosparam command="load" file="$(find exercise_2_1)/config/params.yaml" ns="masteruvic" />
+
+    <node name="rviz" pkg="rviz" type="rviz" output="screen" />
+
+    <include file="$(find usb_cam)/launch/usb_cam-test.launch" />
+</launch>
